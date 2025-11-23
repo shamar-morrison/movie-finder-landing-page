@@ -88,11 +88,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative flex justify-center lg:justify-end"
           >
-            <PhoneMockup
-              src="/images/app-home.png"
-              alt="App Home Screen"
-              priority
-            />
+            <PhoneMockup src="/images/app-hero.png" alt="App Screen" priority />
           </motion.div>
         </div>
       </div>
