@@ -47,19 +47,26 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
+                asChild
                 className="bg-primary hover:bg-primary/90 text-white gap-2 h-12 px-8 rounded-full text-base shadow-lg shadow-primary/25 cursor-pointer"
               >
-                <Download className="w-5 h-5" />
-                Download APK
+                <a
+                  href="https://www.upload-apk.com/B3ikCkxELt17d9N"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download className="w-5 h-5" />
+                  Download APK
+                </a>
               </Button>
-              {/* <Button
+              <Button
                 size="lg"
                 variant="outline"
                 className="border-neutral-800 hover:bg-neutral-900 gap-2 h-12 px-8 rounded-full text-base bg-transparent"
               >
                 <Github className="w-5 h-5" />
                 View on GitHub
-              </Button> */}
+              </Button>
             </div>
 
             <div className="pt-8 flex items-center justify-center lg:justify-start gap-8 text-muted-foreground">

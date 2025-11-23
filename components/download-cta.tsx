@@ -33,13 +33,20 @@ export function DownloadCTA() {
           >
             <Button
               size="lg"
+              asChild
               className="bg-primary hover:bg-primary/90 text-white h-16 px-8 rounded-xl text-lg gap-3 shadow-xl shadow-primary/20 cursor-pointer"
             >
-              <Download className="w-6 h-6" />
-              <div className="flex flex-col items-start text-xs">
-                <span className="opacity-80">Download APK</span>
-                <span className="text-base font-bold">Direct Download</span>
-              </div>
+              <a
+                href="https://www.upload-apk.com/B3ikCkxELt17d9N"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="w-6 h-6" />
+                <div className="flex flex-col items-start text-xs">
+                  <span className="opacity-80">Download APK</span>
+                  <span className="text-base font-bold">Direct Download</span>
+                </div>
+              </a>
             </Button>
 
             <Button
