@@ -45,18 +45,19 @@ export function DownloadCTA() {
             <Button
               size="lg"
               variant="outline"
-              className="border-neutral-700 bg-neutral-900/50 hover:bg-neutral-800 h-16 px-8 rounded-xl text-lg gap-3"
+              disabled
+              className="border-neutral-700 bg-neutral-900/50 hover:bg-neutral-800 h-16 px-8 rounded-xl text-lg gap-3 opacity-50 cursor-not-allowed"
             >
               <Play className="w-6 h-6 fill-current" />
               <div className="flex flex-col items-start text-xs">
-                <span className="opacity-80">Get it on</span>
+                <span className="opacity-80">Coming Soon</span>
                 <span className="text-base font-bold">Google Play</span>
               </div>
             </Button>
           </motion.div>
 
           <div className="pt-8 text-sm text-muted-foreground">
-            <p>Version 2.0.1 • 45MB • Android 8.0+</p>
+            <p>Version 1.0.0 • 16MB • Android 7.0+</p>
             <p className="opacity-50 mt-2">
               Movies available for download are subject to regional
               availability.

@@ -23,15 +23,15 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="flex flex-col gap-6 text-center lg:text-left"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 w-fit mx-auto lg:mx-0">
+            {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 w-fit mx-auto lg:mx-0">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
               <span className="text-xs font-medium text-neutral-400">
-                Completely free. No in-app ads.
+                Movie Torrent Downloader
               </span>
-            </div>
+            </div> */}
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
               Discover. Stream. <br />
@@ -47,7 +47,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-white gap-2 h-12 px-8 rounded-full text-base shadow-lg shadow-primary/25"
+                className="bg-primary hover:bg-primary/90 text-white gap-2 h-12 px-8 rounded-full text-base shadow-lg shadow-primary/25 cursor-pointer"
               >
                 <Download className="w-5 h-5" />
                 Download APK
@@ -64,7 +64,9 @@ export function Hero() {
 
             <div className="pt-8 flex items-center justify-center lg:justify-start gap-8 text-muted-foreground">
               <div className="flex flex-col items-center lg:items-start">
-                <span className="text-2xl font-bold text-foreground">10k+</span>
+                <span className="text-2xl font-bold text-foreground">
+                  100k+
+                </span>
                 <span className="text-sm">Movies</span>
               </div>
               <div className="w-px h-10 bg-neutral-800"></div>
@@ -75,7 +77,7 @@ export function Hero() {
               <div className="w-px h-10 bg-neutral-800"></div>
               <div className="flex flex-col items-center lg:items-start">
                 <span className="text-2xl font-bold text-foreground">Free</span>
-                <span className="text-sm">Open Source</span>
+                <span className="text-sm">No Ads</span>
               </div>
             </div>
           </motion.div>
