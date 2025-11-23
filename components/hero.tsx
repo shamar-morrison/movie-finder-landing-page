@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Download, Github } from "lucide-react"
+import { Download } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { PhoneMockup } from "@/components/phone-mockup"
 
@@ -61,11 +62,24 @@ export function Hero() {
               </Button>
               <Button
                 size="lg"
+                asChild
                 variant="outline"
                 className="border-neutral-800 hover:bg-neutral-900 gap-2 h-12 px-8 rounded-full text-base bg-transparent"
               >
-                <Github className="w-5 h-5" />
-                View on GitHub
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.horizon.moviefindertorrent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/images/google-play.svg"
+                    alt="Google Play"
+                    width={20}
+                    height={20}
+                    className="w-5 h-5"
+                  />
+                  Get it on Google Play
+                </a>
               </Button>
             </div>
 

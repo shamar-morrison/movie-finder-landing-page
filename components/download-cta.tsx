@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Download, Play } from "lucide-react"
+import { Download } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function DownloadCTA() {
@@ -51,15 +52,27 @@ export function DownloadCTA() {
 
             <Button
               size="lg"
+              asChild
               variant="outline"
-              disabled
-              className="border-neutral-700 bg-neutral-900/50 hover:bg-neutral-800 h-16 px-8 rounded-xl text-lg gap-3 opacity-50 cursor-not-allowed"
+              className="border-neutral-700 bg-neutral-900/50 hover:bg-neutral-800 h-16 px-8 rounded-xl text-lg gap-3"
             >
-              <Play className="w-6 h-6 fill-current" />
-              <div className="flex flex-col items-start text-xs">
-                <span className="opacity-80">Coming Soon</span>
-                <span className="text-base font-bold">Google Play</span>
-              </div>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.horizon.moviefindertorrent"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/google-play.svg"
+                  alt="Google Play"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                />
+                <div className="flex flex-col items-start text-xs">
+                  <span className="opacity-80">Get it on</span>
+                  <span className="text-base font-bold">Google Play</span>
+                </div>
+              </a>
             </Button>
           </motion.div>
 
