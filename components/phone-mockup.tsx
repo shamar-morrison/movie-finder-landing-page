@@ -20,7 +20,7 @@ export function PhoneMockup({
     <div className={cn("relative mx-auto w-[280px] sm:w-[320px]", className)}>
       <div className="relative aspect-[9/19.5] overflow-hidden rounded-[2rem] border-8 border-neutral-900 bg-neutral-950 shadow-2xl">
         {/* Punch-hole Camera */}
-        <div className="absolute top-4 left-1/2 -translate-x-1/2 h-4 w-4 bg-black rounded-full z-20 ring-1 ring-neutral-800/50"></div>
+        <div className="absolute top-[21px] left-5 h-4 w-4 bg-black rounded-full z-20 ring-1 ring-neutral-800/50"></div>
 
         {/* Screen Content */}
         <div className="relative w-full h-full bg-neutral-900">
