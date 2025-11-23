@@ -24,7 +24,13 @@ export function DownloadCTA() {
             today. Free forever, open source, and no hidden fees.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center pt-8"
+          >
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-white h-16 px-8 rounded-xl text-lg gap-3 shadow-xl shadow-primary/20"
@@ -47,7 +53,7 @@ export function DownloadCTA() {
                 <span className="text-base font-bold">Google Play</span>
               </div>
             </Button>
-          </div>
+          </motion.div>
 
           <div className="pt-8 text-sm text-muted-foreground">
             <p>Version 2.0.1 • 45MB • Android 8.0+</p>

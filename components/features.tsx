@@ -35,19 +35,40 @@ const FeatureSection = ({
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               {description}
             </p>
-            <ul className="space-y-4">
+            <motion.ul
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              variants={{
+                hidden: { opacity: 0 },
+                show: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.1,
+                  },
+                },
+              }}
+              className="space-y-4"
+            >
               {features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-3">
+                <motion.li
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    show: { opacity: 1, x: 0 },
+                  }}
+                  className="flex items-center gap-3"
+                >
                   <div className="h-2 w-2 rounded-full bg-primary" />
                   <span className="text-lg">{feature}</span>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: reversed ? -20 : 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.9, x: reversed ? -20 : 20 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className={`flex justify-center ${reversed ? "lg:col-start-1" : ""}`}
