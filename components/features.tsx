@@ -20,8 +20,10 @@ const FeatureSection = ({
 }) => {
   return (
     <div className="py-24 overflow-hidden">
-      <div className="container px-4 md:px-6">
-        <div className={`grid lg:grid-cols-2 gap-12 lg:gap-24 items-center ${reversed ? "lg:grid-flow-dense" : ""}`}>
+      <div className="container px-4 md:px-6 mx-auto">
+        <div
+          className={`grid lg:grid-cols-2 gap-12 lg:gap-24 items-center ${reversed ? "lg:grid-flow-dense" : ""}`}
+        >
           <motion.div
             initial={{ opacity: 0, x: reversed ? 20 : -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -30,7 +32,9 @@ const FeatureSection = ({
             className={reversed ? "lg:col-start-2" : ""}
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6">{title}</h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">{description}</p>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              {description}
+            </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center gap-3">

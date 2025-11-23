@@ -4,14 +4,15 @@ import Link from "next/link"
 export function Footer() {
   return (
     <footer className="py-12 border-t border-neutral-900 bg-neutral-950">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-6 mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="text-2xl font-bold tracking-tighter">
               Popcorn<span className="text-primary">.</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
-              The ultimate open-source movie finder and streaming companion for Android.
+              The ultimate open-source movie finder and streaming companion for
+              Android.
             </p>
           </div>
 
@@ -60,15 +61,24 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Social</h3>
             <div className="flex gap-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Github className="w-5 h-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Twitter className="w-5 h-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Disc className="w-5 h-5" />
                 <span className="sr-only">Discord</span>
               </Link>
