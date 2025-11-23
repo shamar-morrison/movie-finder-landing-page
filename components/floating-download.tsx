@@ -10,16 +10,34 @@ export function FloatingDownload() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
-        setIsVisible(true)
-      } else {
-        setIsVisible(false)
+      const downloadSection = document.getElementById("download")
+      const isScrolled = window.scrollY > 500
+
+      if (!downloadSection) {
+        setIsVisible(isScrolled)
+        return
       }
+
+      const rect = downloadSection.getBoundingClientRect()
+      // Check if download section is in viewport
+      const isFooterVisible = rect.top < window.innerHeight && rect.bottom >= 0
+
+      setIsVisible(isScrolled && !isFooterVisible)
     }
 
     window.addEventListener("scroll", handleScroll)
+    // Initial check
+    handleScroll()
+
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const scrollToDownload = () => {
+    const downloadSection = document.getElementById("download")
+    if (downloadSection) {
+      downloadSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
     <AnimatePresence>
@@ -32,6 +50,7 @@ export function FloatingDownload() {
         >
           <Button
             size="lg"
+            onClick={scrollToDownload}
             className="rounded-full h-14 px-6 shadow-2xl bg-primary hover:bg-primary/90 text-white gap-2"
           >
             <Download className="w-5 h-5" />

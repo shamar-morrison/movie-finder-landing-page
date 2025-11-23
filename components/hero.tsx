@@ -28,7 +28,9 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              <span className="text-xs font-medium text-neutral-400">v2.0 Now Available</span>
+              <span className="text-xs font-medium text-neutral-400">
+                Completely free. No in-app ads.
+              </span>
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
@@ -37,8 +39,9 @@ export function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
-              Your ultimate movie companion. Browse thousands of titles, watch trailers instantly, and download in 4K
-              quality directly to your device.
+              Your ultimate movie companion. Browse thousands of titles, watch
+              trailers instantly, and download in 4K quality directly to your
+              device.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -49,14 +52,14 @@ export function Hero() {
                 <Download className="w-5 h-5" />
                 Download APK
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-neutral-800 hover:bg-neutral-900 gap-2 h-12 px-8 rounded-full text-base bg-transparent"
               >
                 <Github className="w-5 h-5" />
                 View on GitHub
-              </Button>
+              </Button> */}
             </div>
 
             <div className="pt-8 flex items-center justify-center lg:justify-start gap-8 text-muted-foreground">
@@ -83,7 +86,11 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative flex justify-center lg:justify-end"
           >
-            <PhoneMockup src="/images/app-home.png" alt="App Home Screen" priority />
+            <PhoneMockup
+              src="/images/app-home.png"
+              alt="App Home Screen"
+              priority
+            />
           </motion.div>
         </div>
       </div>

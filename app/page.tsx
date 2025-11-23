@@ -1,7 +1,6 @@
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { DownloadCTA } from "@/components/download-cta"
-import { Footer } from "@/components/footer"
 import { FloatingDownload } from "@/components/floating-download"
 
 export default function Home() {
@@ -10,7 +9,7 @@ export default function Home() {
       <Hero />
       <Features />
       <DownloadCTA />
-      <Footer />
+      {/* <Footer /> */}
       <FloatingDownload />
     </main>
   )

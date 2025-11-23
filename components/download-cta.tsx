@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export function DownloadCTA() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="download" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-neutral-900 to-primary/10 -z-10"></div>
 
       <div className="container px-4 md:px-6 mx-auto">
