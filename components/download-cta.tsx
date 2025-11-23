@@ -33,7 +33,7 @@ export function DownloadCTA() {
           >
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-white h-16 px-8 rounded-xl text-lg gap-3 shadow-xl shadow-primary/20"
+              className="bg-primary hover:bg-primary/90 text-white h-16 px-8 rounded-xl text-lg gap-3 shadow-xl shadow-primary/20 cursor-pointer"
             >
               <Download className="w-6 h-6" />
               <div className="flex flex-col items-start text-xs">
